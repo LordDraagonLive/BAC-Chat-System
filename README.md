@@ -1,6 +1,6 @@
 # BAC-Chat-System
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/LordDraagonLive/BAC-Chat-System/blob/master/LICENSE)
-[![built with Java](https://img.shields.io/badge/built%20with-Java-red.svg)](https://java.com/en/)
+[![built with Java](https://img.shields.io/badge/built%20with-Java-red.svg?style=plastic)](https://java.com/en/)
 
 
 ## Description
