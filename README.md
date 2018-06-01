@@ -14,3 +14,22 @@ Created using Java, Java web services and java façade entity database. This pro
 - Start the derby server.
 - Deploy the Chat Server.
 - Finally, enjoy!
+
+## A Look at the App
+
+![Register](/Repo-Assets/register.png?raw=true)
+
+![Login](/Repo-Assets/login.png?raw=true)
+
+![List Chat Tread](/Repo-Assets/ListChatThread.png?raw=true)
+
+![List Edit Chat Tread](/Repo-Assets/ListEditChatThread.png?raw=true)
+
+![Create Chat](/Repo-Assets/CreateChat.png?raw=true "Create Chat")
+
+![Create Chat Tread](/Repo-Assets/CreateChatThread.png?raw=true)
+
+
+
+
+
