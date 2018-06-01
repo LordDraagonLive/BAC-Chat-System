@@ -1,6 +1,6 @@
 # BAC-Chat-System
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)]()
-[![File Size](https://img.shields.io/github/size/webcaetano/craft/build/phaser-craft.min.js.svg)]()
+[![File Size](https://img.shields.io/github/size/webcaetano/craft/build/phaser-craft.min.js.svg)](https://github.com/LordDraagonLive/BAC-Chat-System)
 
 ## Description
 Created using Java, Java web services and java façade entity database. This project includes a server and client apps. A client can perform, user registration, user logins, chat group edits and send chat messages. 
