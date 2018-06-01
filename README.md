@@ -1,5 +1,5 @@
 # BAC-Chat-System
-[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/timgrossmann/InstaPy/blob/master/LICENSE)
+[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)]()
 [![File Size](https://img.shields.io/github/size/webcaetano/craft/build/phaser-craft.min.js.svg)]()
 
 ## Description
