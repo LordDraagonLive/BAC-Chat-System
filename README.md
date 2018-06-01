@@ -1,5 +1,5 @@
 # BAC-Chat-System
-[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/LordDraagonLive/BAC-Chat-System/blob/master/LICENSE)
+[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://github.com/LordDraagonLive/BAC-Chat-System/blob/master/LICENSE)
 [![built with Java](https://img.shields.io/badge/built%20with-Java-red.svg?style=plastic)](https://java.com/en/)
 
 
@@ -11,3 +11,6 @@ Created using Java, Java web services and java façade entity database. This pro
 - Firstly, copy the ChatSystem database in Derby-Database folder.
 - Paste the copied folder in .netbeans-derby folder in Users folder of Windows default user.
 - Setup up the netbeans JDBC derby database and refer the copied database.
+- Start the derby server.
+- Deploy the Chat Server.
+- Finally, enjoy!
