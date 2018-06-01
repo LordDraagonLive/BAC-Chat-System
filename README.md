@@ -1,4 +1,6 @@
 # BAC-Chat-System
+[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/timgrossmann/InstaPy/blob/master/LICENSE)
+[![File Size](https://img.shields.io/github/size/webcaetano/craft/build/phaser-craft.min.js.svg)]()
 
 ## Description
 Created using Java, Java web services and java façade entity database. This project includes a server and client apps. A client can perform, user registration, user logins, chat group edits and send chat messages. 
