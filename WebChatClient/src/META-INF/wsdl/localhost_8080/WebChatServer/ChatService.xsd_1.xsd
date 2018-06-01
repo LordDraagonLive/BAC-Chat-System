@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://services.bac.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://services.bac.com/">
+
+<xs:element name="chatMessage" type="tns:chatMessage"/>
+
+<xs:element name="chatThread" type="tns:chatThread"/>
+
+<xs:element name="chatThreadList" type="tns:chatThreadList"/>
+
+<xs:element name="chatThreadListResponse" type="tns:chatThreadListResponse"/>
+
+<xs:element name="chatsInThread" type="tns:chatsInThread"/>
+
+<xs:element name="chatsInThreadResponse" type="tns:chatsInThreadResponse"/>
+
+<xs:element name="createMessage" type="tns:createMessage"/>
+
+<xs:element name="createMessageResponse" type="tns:createMessageResponse"/>
+
+<xs:element name="createThread" type="tns:createThread"/>
+
+<xs:element name="createThreadResponse" type="tns:createThreadResponse"/>
+
+<xs:element name="findDuplicateThreads" type="tns:findDuplicateThreads"/>
+
+<xs:element name="findDuplicateThreadsResponse" type="tns:findDuplicateThreadsResponse"/>
+
+<xs:element name="updateChatThread" type="tns:updateChatThread"/>
+
+<xs:element name="updateChatThreadResponse" type="tns:updateChatThreadResponse"/>
+
+<xs:complexType name="chatsInThread">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="chatsInThreadResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:chatMessage" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="chatMessage">
+<xs:sequence>
+<xs:element name="createdatetime" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="creatorId" type="xs:string" minOccurs="0"/>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+<xs:element name="messageId" type="xs:int" minOccurs="0"/>
+<xs:element name="threadId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findDuplicateThreads">
+<xs:sequence>
+<xs:element name="ThreadTitle" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findDuplicateThreadsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createThread">
+<xs:sequence>
+<xs:element name="threadTitle" type="xs:string" minOccurs="0"/>
+<xs:element name="creator_Id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createThreadResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateChatThread">
+<xs:sequence>
+<xs:element name="threadID" type="xs:int" minOccurs="0"/>
+<xs:element name="creatorID" type="xs:string" minOccurs="0"/>
+<xs:element name="threadTitle" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateChatThreadResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="chatThreadList">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="chatThreadListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:chatThread" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="chatThread">
+<xs:sequence>
+<xs:element name="creatorId" type="xs:string" minOccurs="0"/>
+<xs:element name="lasteditTime" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="threadId" type="xs:int" minOccurs="0"/>
+<xs:element name="threadTitle" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createMessage">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+<xs:element name="creatorID" type="xs:string" minOccurs="0"/>
+<xs:element name="threadID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createMessageResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

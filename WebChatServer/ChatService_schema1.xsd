@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://services.bac.com/" xmlns:tns="http://services.bac.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="createThread" type="tns:createThread"/>
+
+  <xs:element name="createThreadResponse" type="tns:createThreadResponse"/>
+
+  <xs:complexType name="createThread">
+    <xs:sequence>
+      <xs:element name="threadTitle" type="xs:string" minOccurs="0"/>
+      <xs:element name="lastEditedTime" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="creator_Id" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createThreadResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

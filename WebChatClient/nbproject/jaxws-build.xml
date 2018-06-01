@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-UserService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/UserService"/>
+        <property name="wsdl-UserService" location="xml-resources/web-service-references/UserService/wsdl/localhost_8080/WebChatServer/UserService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/UserService" destdir="${build.generated.dir}/jax-wsCache/UserService" wsdl="${wsdl-UserService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/WebChatServer/UserService?wsdl" xnocompile="true" xendorsed="true" package="com.bac">
+            <depends file="${wsdl-UserService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/UserService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/UserService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-UserService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/UserService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/bac"/>
+    </target>
+    <target name="wsimport-client-ChatService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ChatService"/>
+        <property name="wsdl-ChatService" location="xml-resources/web-service-references/ChatService/wsdl/localhost_8080/WebChatServer/ChatService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ChatService" destdir="${build.generated.dir}/jax-wsCache/ChatService" wsdl="${wsdl-ChatService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/WebChatServer/ChatService?wsdl" xnocompile="true" xendorsed="true" package="com.bac.chatservice">
+            <depends file="${wsdl-ChatService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ChatService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ChatService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ChatService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ChatService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/bac/chatservice"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-UserService, wsimport-client-ChatService"/>
+</project>
